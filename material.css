@@ -1,0 +1,61 @@
+  
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; }
+
+  .navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0; }
+
+
+  #hello{
+    margin-left: 31cm;
+  }
+
+
+
+  .wrapper {
+    overflow: auto;
+    background: white;
+    max-height: 500px;
+    width: 320px;
+  }
+
+.wrapper::-webkit-scrollbar{
+  width: 10px;
+}
+
+.wrapper::-webkit-scrollbar-track{
+  background:gray;
+  visibility:hidden; 
+}
+.wrapper,
+.wrapper::-webkit-scrollbar-track:hover{
+ visibility:visible;  
+}
+
+
+
+.demo-card-wide.mdl-card {
+  width: 350px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 200px;
+  background: url('avatar.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+#logo{
+font-size:45px;
+color:#4A148C;
+font-family: 'Noto Serif', serif;
+}
+#gil{
+  padding-left:40px;
+  font-size:50px;
+  color:#FAFAFA;
+  font-family:bold; 
+}

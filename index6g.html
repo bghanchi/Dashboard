@@ -1,0 +1,254 @@
+<html lang="en"  >
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Angular Material style sheet -->
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="material.css" >
+    
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="material-kit.css" rel="stylesheet"/>  
+    <link type="text/css" rel="stylesheet" href="tab.css"> 
+    <style>
+            #hai{
+                width:15cm;
+                height:15cm; 
+            }
+            #bt1{
+                background-color:#512DA8;
+               color:white;
+
+            }
+        </style>
+        
+
+</head>
+    <body ng-app="myapp">
+ <!-- Main body start -->
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+       <!        >     
+            <div id="bt1" class="mdl-card__actions mdl-card--border">
+            <button  style="margin-left:8cm;"  class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+                <i class="material-icons">more_vert</i>
+              </button>
+            </div>
+
+            <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+   
+                <li id="show-dialog" class="mdl-menu__item">Edit</li>
+                <li class="mdl-menu__item">Delete</li>
+              </ul>
+          
+   <!--           Start dialog              -->
+   
+    <dialog id="hai"   class="mdl-dialog">
+        <h3 >Edit User</h3>
+      <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+            <div class="mdl-grid mdl-grid--no-spacing">
+            <div  class="mdl-cell mdl-cell--2-col">
+                    <div  class="mdl-tabs__tab-bar">
+                      
+                      <a href="#tab1-panel" class="mdl-tabs__tab is-active">
+                            <span class="hollow-circle"></span>
+                            Basic
+                        </a>
+            
+                        <a  href="#tab2-panel" class="mdl-tabs__tab">
+                            <span class="hollow-circle"></span>
+                            Personal
+                        </a>
+        
+                        <a href="#tab3-panel" class="mdl-tabs__tab">
+                            <span class="hollow-circle"></span>
+                             Work
+                        </a>
+                        <a href="#tab4-panel" class="mdl-tabs__tab">
+                            <span class="hollow-circle"></span>
+                            Contact
+                        </a>
+                        <a href="#tab5-panel" class="mdl-tabs__tab">
+                            <span class="hollow-circle"></span>
+                           Social life
+                        </a>
+                        <a href="#tab6-panel" class="mdl-tabs__tab">
+                            <span class="hollow-circle"></span>
+                          Setting
+                        </a>
+                      </div>
+                </div>
+                <div class="mdl-cell mdl-cell--10-col">
+                    <div class="mdl-tabs__panel is-active" id="tab1-panel">
+                            <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                      <input class="mdl-textfield__input" type="text" id="sample3">
+                                      <label class="mdl-textfield__label" for="sample3">Username</label>
+                                    </div></br>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="password" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Password</label>
+                                    </div>
+
+                                </form>
+                    </div>
+
+                    <div class="mdl-tabs__panel" id="tab2-panel">
+                            <form action="#">
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="sample3">
+                            <label class="mdl-textfield__label" for="sample3">Name</label>
+                          </div>
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                              <input class="mdl-textfield__input" type="text" id="sample3">
+                              <label class="mdl-textfield__label" for="sample3">Surname</label>
+                          </div>
+                          <div class="mdl-textfield mdl-js-textfield">
+                              <input class="mdl-textfield__input" type="date" rows= "1" id="sample5" ></input>
+                              <label class="mdl-textfield__label" for="sample5">Birthdate</label>
+                          </div>                      
+                                  </form>
+                    </div>
+    
+                        <div class="mdl-tabs__panel" id="tab3-panel">
+                                <form action="#">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" id="sample3">
+                                          <label class="mdl-textfield__label" for="sample3">Company</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Position</label>
+                                          </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="number" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Salary</label>
+                                          </div>
+      
+                                      </form>
+                        </div>
+    
+                        <div class="mdl-tabs__panel" id="tab4-panel">
+                         <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                              <input class="mdl-textfield__input" type="email" id="sample3" required>
+                              <label class="mdl-textfield__label" for="sample3">Email</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="number" id="sample3">
+                                <label class="mdl-textfield__label" for="sample3">Phone</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="sample3">
+                                  <label class="mdl-textfield__label" for="sample3">Address</label>
+                                </div>                                      
+                          </form>
+                        </div>
+          
+                        <div class="mdl-tabs__panel" id="tab5-panel">
+                                <form action="#">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                      <input class="mdl-textfield__input" type="text" id="sample3">
+                                      <label class="mdl-textfield__label" for="sample3">Google</label>
+                                    </div>
+
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Facebook</label>
+                                      </div>
+
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" id="sample3">
+                                          <label class="mdl-textfield__label" for="sample3">Github</label>
+                                        </div>
+                                </form>
+                        </div>
+          
+                      <div class="mdl-tabs__panel" id="tab6-panel">
+                        <form action="#">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="active">
+                                <input type="checkbox" id="active" class="mdl-checkbox__input" checked />
+                                <span class="mdl-checkbox__label">active</span>
+                          </label>
+                          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="blocked">
+                              <input type="checkbox" id="blocked" class="mdl-checkbox__input" />
+                              <span class="mdl-checkbox__label">Blocked</span>
+                         </label>
+                         <p>Registration date: 13 October, 2012 at 17:50</p>
+                         <p>Last joined date: 21 April, 2017 at 23:55</p>
+  
+                            </form>
+                      </div>
+
+                        
+                </div>
+            </div>
+    </div>
+    
+    <div  class="mdl-dialog__actions">
+        <button style="background-color:rgb(228, 96, 87);color:white" type="button" id="close" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Cancel</button>
+            <button  style="margin-right:328px;background-color:rgb(103, 115, 184);color:white" type="button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Submit</button>
+          </div>
+
+        </dialog>
+
+                  
+<!--           End Dailog           -->
+
+                  <script>
+                        var dialog = document.querySelector('dialog');
+                        var showDialogButton = document.querySelector('#show-dialog');
+                        if (! dialog.showModal) {
+                          dialogPolyfill.registerDialog(dialog);
+                        }
+                        showDialogButton.addEventListener('click', function() {
+                          dialog.showModal();
+                        });
+                        dialog.querySelector('#close').addEventListener('click', function() {
+                          dialog.close();
+                        });
+                      </script>
+                         
+
+            
+                  <!        >
+
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Welcome</h2>
+                   </div>
+ 
+            <div   class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Get Started
+              </a>
+            </div>
+
+
+        </div>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+  <!-- Angular Material Library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+
+ <script>
+        var app =angular.module('myapp', ['ngMaterial'])
+        
+        app.controller('AppCtrl', function($scope,$mdSidenav) {
+          $scope.openLeftMenu = function() {
+            $mdSidenav('right').toggle();
+            $scope.isSideNavOpen = !$scope.isSideNavOpen;
+          };
+        });
+        
+        
+        
+        </script>
+        
+     
+          </body>

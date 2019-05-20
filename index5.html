@@ -1,0 +1,348 @@
+<html lang="en"  >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="material.css" >
+
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="material-kit.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+
+<style>
+  #hai{
+    margin-top:5px;  
+  }
+  #floating_sidebar {
+ position:fixed;
+ left: 0;
+ top: 64px; /* change to adjust height from the top of the page */
+}
+
+#hiii {
+  width: 320px;
+  height: 50px;
+  margin: 0;
+  margin-top:5x;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="tab.css">
+</head>
+<body ng-app="myApp">
+  <!--
+    Your HTML content here
+  -->  
+
+
+
+  <dialog style="width:500px;" class="mdl-dialog">
+
+
+      <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+          <div class="mdl-grid mdl-grid--no-spacing">
+          <div  class="mdl-cell mdl-cell--2-col">
+                  <div  class="mdl-tabs__tab-bar">
+          
+                    <a href="#tab1-panel" class="mdl-tabs__tab is-active">
+                          <span class="hollow-circle"></span>
+                          Basic
+                      </a>
+          
+                      <a  href="#tab2-panel" class="mdl-tabs__tab">
+                          <span class="hollow-circle"></span>
+                          Personal
+                      </a>
+      
+                      <a href="#tab3-panel" class="mdl-tabs__tab">
+                          <span class="hollow-circle"></span>
+                           Work
+                      </a>
+                      <a href="#tab4-panel" class="mdl-tabs__tab">
+                          <span class="hollow-circle"></span>
+                          Contact
+                      </a>
+                      <a href="#tab5-panel" class="mdl-tabs__tab">
+                          <span class="hollow-circle"></span>
+                         Social life
+                      </a>
+                      <a href="#tab6-panel" class="mdl-tabs__tab">
+                          <span class="hollow-circle"></span>
+                        Setting
+                      </a>
+                    </div>
+              </div>
+              <div class="mdl-cell mdl-cell--10-col">
+                  <div class="mdl-tabs__panel is-active" id="tab1-panel">
+                          <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="sample3">
+                                    <label class="mdl-textfield__label" for="sample3">Username</label>
+                                  </div></br>
+                                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="password" id="sample3">
+                                          <label class="mdl-textfield__label" for="sample3">Password</label>
+                                  </div>
+
+                              </form>
+                  </div>
+
+                  <div class="mdl-tabs__panel" id="tab2-panel">
+                          <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Name</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="sample3">
+                            <label class="mdl-textfield__label" for="sample3">Surname</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="date" rows= "1" id="sample5" ></input>
+                            <label class="mdl-textfield__label" for="sample5">Birthdate</label>
+                        </div>                      
+                                </form>
+                  </div>
+  
+                      <div class="mdl-tabs__panel" id="tab3-panel">
+                              <form action="#">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Company</label>
+                                      </div>
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--fix-label">
+                                          <input class="mdl-textfield__input" type="text" id="sample3">
+                                          <label class="mdl-textfield__label" for="sample3">Position</label>
+                                        </div>
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--fix-label">
+                                          <input class="mdl-textfield__input" type="number" id="sample3">
+                                          <label class="mdl-textfield__label" for="sample3">Salary</label>
+                                        </div>
+    
+                                    </form>
+                      </div>
+  
+                      <div class="mdl-tabs__panel" id="tab4-panel">
+                          <form action="#">
+                                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="password" id="sample3">
+                                    <label class="mdl-textfield__label" for="sample3">Password</label>
+                                  </div>
+                                </form>
+                      </div>
+                      <div class="mdl-tabs__panel" id="tab5-panel">
+                            <form action="#">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="password" id="sample3">
+                                <label class="mdl-textfield__label" for="sample3">Password</label>
+                              </div>
+                            </form>
+                    </div>
+                    <div class="mdl-tabs__panel" id="tab6-panel">
+                      <form action="#">
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="password" id="sample3">
+                            <label class="mdl-textfield__label" for="sample3">Password</label>
+                          </div>
+                        </form>
+                    </div>
+
+                      
+              </div>
+          </div>
+  </div>
+  
+    <div class="mdl-dialog__actions">
+      <button type="button" id="close" class="mdl-button">Cancel</button>
+          <button  type="button" class="mdl-button">Submit</button>
+        </div>
+
+      </dialog>
+
+
+
+
+
+ 
+  <div ng-controller="AppCtrl" ng-cloak>
+
+    <!-- startside nev bar -->  
+
+
+      <md-sidenav  id="floating_sidebar" md-component-id="right" class="md-sidenav-left"  >
+ 
+  <!-- first block of side nev -->  
+ 
+          <div  class="scrolling-div" style="margin-left:0px; " layout="column" layout-fill>
+              <md-toolbar>
+            
+            
+                 <div class="md-toolbar-tools">
+                    <md-button style="background-color:white " >
+                       <h1 id="logo">G</h1>
+                      </md-button>
+   
+                  <h2 md-truncate flex id="gil">Gil</h2>
+                    </div>
+            
+              </md-toolbar>
+            
+  <!-- second block of side nev -->  
+
+              
+                   <div  style="margin-top:10px;" style="display: flex;">
+                  <div  class="col-sm-4 col-sm-offset-0">
+                      <img src="avatar.jpg" alt="Thumbnail Image" class="img-circle img-raised img-responsive">
+                  </div>
+
+                  <div style="padding:5px 20px;" class="user-info">
+                      <p class="name">Emilio Verdines</p>
+                      <!----><p class="position ng-star-inserted" style="">Web developer <br> <small class="muted-text">Member since May. 2016</small></p>
+                  </div>
+   <!-- third block if side new -->      
+         
+                <div  class="w-100 muted-text ng-star-inserted" fxlayout="row" fxlayoutalign="space-around center" style="flex-direction: row; box-sizing: border-box; display: flex; max-height: 100%; place-content: center space-around; align-items: center;">
+
+                  <md-button   class="md-icon-button" aria-label="Settings">
+                      <i  class="material-icons">person_outline</i>        
+                </md-button>
+
+              <md-button   class="md-icon-button" aria-label="Settings">
+                    <i  class="material-icons">mail_outline</i>        
+                </md-button>
+
+                    <md-button   class="md-icon-button" aria-label="Settings">
+                    <i  class="material-icons">power_settings_new</i>        
+                    </md-button>
+                  </div>
+
+                </div>
+                      
+  <!-- third block of sidenev -->  
+                      
+                        <div  style="margin-top:10px;" class="wrapper">
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">dashboard</i>Primary Button</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">people</i>User</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">menu</i>Dynamic Menu</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">av_timer</i>Time Schedule</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">feedback</i>Feedback</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">email</i>Mail Box</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">tab</i>Tables</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">bookmark</i>Bookmark</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">multiline_chart</i>Charts</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">history</i>History</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">assignment</i>Assigment</md-button>
+                        <md-button id="hiii"   style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;" class=" md-raised"><i style="padding: 0px 30px 0px 20px;"   class="mdl-color-text--black material-icons">restore</i>Restore</md-button> 
+                      </div>
+                                      
+  <!-- End of third block of side nev -->  
+ 
+
+</div>                
+                               
+      </md-sidenav>
+    
+  <!-- header icon -->  
+
+  <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+      <li class="mdl-menu__item">About</li>
+      <li class="mdl-menu__item">Contact</li>
+      <li class="mdl-menu__item">Legal information</li>
+    </ul>
+
+
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+      <li class="mdl-menu__item">Some Action</li>
+    <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+     <li disabled class="mdl-menu__item">Disabled Action</li>
+    <li class="mdl-menu__item">Yet Another Action</li>
+    </ul>
+
+
+    <!-- header -->  
+
+
+
+  <md-content>
+    
+       <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools">
+              
+              <md-button   ng-click="openLeftMenu()" class="md-icon-button" aria-label="Settings">
+                <i style="color:white"  class="material-icons">reorder</i>        
+              </md-button>
+
+              <div id="show-dialog"> 
+              <md-button id="hello"  class="md-icon-button" aria-label="Settings">
+                    <i  style="color:white" class="material-icons">people</i>        
+             </md-button>
+                </div> 
+ 
+             <button id="demo-menu-lower-right"
+             class="mdl-button mdl-js-button mdl-button--icon">
+             <i class="material-icons">notifications_none</i>
+              </button>
+     
+ 
+
+             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+                <i class="material-icons">more_vert</i>
+              </button>
+
+
+            </div>
+  
+          </md-toolbar>
+  
+        </md-content>
+
+
+      </div>      
+ 
+
+      <script>
+          var dialog = document.querySelector('dialog');
+          var showDialogButton = document.querySelector('#show-dialog');
+          if (! dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+          }
+          showDialogButton.addEventListener('click', function() {
+            dialog.showModal();
+          });
+          dialog.querySelector('#close').addEventListener('click', function() {
+            dialog.close();
+          });
+        </script>
+
+
+
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+   <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script>
+var app =angular.module('myApp', ['ngMaterial'])
+
+app.controller('AppCtrl', function($scope,$mdSidenav) {
+  $scope.openLeftMenu = function() {
+    $mdSidenav('right').toggle();
+    $scope.isSideNavOpen = !$scope.isSideNavOpen;
+  };
+});
+
+
+
+</script>
+  
+</body>
+</html>
